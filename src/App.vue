@@ -1,5 +1,19 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppTitle from './components/AppTitle.vue';
+
+export default{
+  components: {
+    AppTitle
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+
+  }
+}
 </script>
 
 <template>
@@ -12,6 +26,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <AppTitle></AppTitle>
 </template>
 
 <style scoped>
