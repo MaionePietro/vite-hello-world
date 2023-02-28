@@ -2,16 +2,18 @@
 export default{
   data(){
     return{
-        title: 'La mia prima app con Vite!'
+        
     }
   }
 }
 </script>
 
 <template>
-    <h1 class="">{{ title }}</h1>
+    <img src="/1.jpg" alt="" class="car">
 </template>
 
 <style>
-
+    .car{
+        max-width: 100%;
+    }
 </style>

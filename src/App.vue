@@ -1,12 +1,14 @@
 <script>
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
-export default{
+export default {
   components: {
-    AppTitle
+    AppTitle,
+    AppHero
   },
-  data(){
-    return{
+  data() {
+    return {
 
     }
   },
@@ -17,16 +19,15 @@ export default{
 </script>
 
 <template>
+
   <div>
+    <AppTitle></AppTitle>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <AppHero></AppHero>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <AppTitle></AppTitle>
+
 </template>
 
 <style scoped>
@@ -36,9 +37,11 @@ export default{
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
